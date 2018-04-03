@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Test</string>
+
+    <string name="sure">确认</string>
+    <string name="close">关闭</string>
+    <string name="yes">是</string>
+    <string name="no">否</string>
+    <string name="permission_rationale_message">您已拒绝我们申请授权，请同意授权，否则该功能将无法正常使用！</string>
+
+    <string name="permission_denied_forever_message">无法获取相关权限，请手动设置授权，否则该功能将无法正常使用！</string>
+</resources>

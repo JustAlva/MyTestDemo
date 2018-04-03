@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res"
+    xmlns:app1="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.wang.avi.AVLoadingIndicatorView
+            android:id="@+id/avi_loading_dialog"
+            style="@style/AVLoadingIndicatorView.Small"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            app1:indicatorColor="@color/main_color"
+            app:indicatorName="BallPulseIndicator"
+            />
+
+        <TextView
+            android:id="@+id/tv_loading_dialog"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+</LinearLayout>

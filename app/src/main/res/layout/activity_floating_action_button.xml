@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lib.utils.floatingactionbutton.activity.FloatingActionButtonActivity">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.jude.easyrecyclerview.EasyRecyclerView
+            android:id="@+id/erv_fab_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_empty="@layout/view_empty"
+            app:layout_error="@layout/view_error"
+            app:layout_progress="@layout/view_progress" />
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/fab_fab_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:src="@drawable/icon_add"
+            app:backgroundTint="@color/main_color"
+            app:elevation="6dp"
+            app:fabSize="normal"
+            app:layout_anchor="@id/erv_fab_content"
+            app:layout_anchorGravity="bottom|right|end"
+            app:layout_behavior="com.lib.utils.floatingactionbutton.utils.ScrollAwareFABBehavior"
+            app:pressedTranslationZ="8dp"
+            app:rippleColor="#ff87ffeb"
+            app:useCompatPadding="false" />
+    </android.support.design.widget.CoordinatorLayout>
+</LinearLayout>

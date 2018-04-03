@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lib.utils.blankj.activity.BlankjCacheActivity">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <TextView
+        android:id="@+id/tv_blankj_cache_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="40dp"
+        android:gravity="center_vertical"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/btn_blankj_cache_get_size"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取缓存大小" />
+    <Button
+        android:id="@+id/btn_blankj_cache_get_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="获取缓存个数" />
+    <!--write-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/edt_blankj_cache_write_key"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="key" />
+        <EditText
+            android:id="@+id/edt_blankj_cache_write_value"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="value" />
+        <Button
+            android:id="@+id/btn_blankj_cache_write"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="写入" />
+    </LinearLayout>
+    <!--read-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/edt_blankj_cache_read"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="key" />
+        <Button
+            android:id="@+id/btn_blankj_cache_read"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="读取" />
+    </LinearLayout>
+    <!--remove-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/edt_blankj_cache_remove"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="key" />
+        <Button
+            android:id="@+id/btn_blankj_cache_remove"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="remove" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_blankj_cache_clear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="清除" />
+
+
+</LinearLayout>

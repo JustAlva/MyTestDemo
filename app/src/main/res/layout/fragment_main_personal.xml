@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <com.lib.utils.views.MyReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.lib.utils.views.MenuLinearLayout
+                android:id="@+id/ml_personal_status_bar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconLeft="@drawable/icon_dialog"
+                app:iconRight="@drawable/arow_right"
+                app:textContent="Blankj-Status Bar" />
+
+            <com.lib.utils.views.MenuLinearLayout
+                android:id="@+id/ml_personal_cache"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconLeft="@drawable/icon_dialog"
+                app:iconRight="@drawable/arow_right"
+                app:textContent="Blankj-Cache" />
+            <!--权限相关-->
+            <com.lib.utils.views.MenuLinearLayout
+                android:id="@+id/ml_personal_permission"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconLeft="@drawable/icon_dialog"
+                app:iconRight="@drawable/arow_right"
+                app:textContent="Blankj-Permission" />
+        </LinearLayout>
+    </com.lib.utils.views.MyReboundScrollView>
+</LinearLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ll_topbar_back"
+    android:orientation="vertical"
+    android:layout_width="@dimen/main_top_bar_height"
+    android:layout_height="match_parent"
+    android:gravity="center" >
+
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/arow_left_withe" />
+</LinearLayout>
+
+
+    

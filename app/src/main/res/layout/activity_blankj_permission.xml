@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.lib.utils.blankj.activity.BlankjPermissionActivity">
+
+    <include layout="@layout/layout_top_bar" />
+    <com.lib.utils.views.MyReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tv_blankj_permission_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="12dp"/>
+
+            <!--setting-->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_blankj_permission_setting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:contentPadding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:text="Setting" />
+
+            </android.support.v7.widget.CardView>
+
+            <!--Location-->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_blankj_permission_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:contentPadding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:text="定位" />
+
+            </android.support.v7.widget.CardView>
+
+            <!--读取手机信息权限-->
+            <android.support.v7.widget.CardView
+                android:id="@+id/cv_blankj_permission_phone_detail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:contentPadding="8dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="center"
+                    android:text="读取手机相关信息" />
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+    </com.lib.utils.views.MyReboundScrollView>
+
+</LinearLayout>

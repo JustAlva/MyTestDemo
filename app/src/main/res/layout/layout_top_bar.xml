@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_top_bar_height"
+         android:background="@color/main_color">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:id="@+id/tv_topbar_title"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_title"/>
+
+        <ViewStub
+            android:layout_width="@dimen/main_top_bar_height"
+            android:layout_height="match_parent"
+            android:id="@+id/vs_topbar_back"
+            android:layout_centerVertical="true"
+            android:layout_alignParentLeft="true"
+            android:layout="@layout/layout_topbar_back"/>
+        <ViewStub
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/vs_topbar_sure"
+            android:layout_alignParentRight="true"
+            android:layout="@layout/layout_topbar_sure"
+            />
+    </RelativeLayout>
+
+</merge>

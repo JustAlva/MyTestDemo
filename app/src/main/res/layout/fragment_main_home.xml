@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <com.lib.utils.views.MyReboundScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <com.lib.utils.views.MenuLinearLayout
+                android:id="@+id/ml_home_floating_action_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconLeft="@drawable/icon_test"
+                app:iconRight="@drawable/arow_right"
+                app:textContent="FloatingActionButton" />
+
+            <com.lib.utils.views.MenuLinearLayout
+                android:id="@+id/ml_home_views"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconLeft="@drawable/icon_view"
+                app:iconRight="@drawable/arow_right"
+                app:textContent="Views" />
+
+            <com.lib.utils.views.MenuLinearLayout
+                android:id="@+id/ml_home_navigation_tabbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconLeft="@drawable/icon_view"
+                app:iconRight="@drawable/arow_right"
+                app:textContent="自定义TabLayoutItem" />
+
+            <com.lib.utils.views.MenuLinearLayout
+                android:id="@+id/ml_home_tablayout_head"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconLeft="@drawable/icon_view"
+                app:iconRight="@drawable/arow_right"
+                app:textContent="TabLayout" />
+            <com.lib.utils.views.MenuLinearLayout
+                android:id="@+id/ml_home_tablayout_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconLeft="@drawable/icon_view"
+                app:iconRight="@drawable/arow_right"
+                app:textContent="我的消息" />
+        </LinearLayout>
+    </com.lib.utils.views.MyReboundScrollView>
+</LinearLayout>

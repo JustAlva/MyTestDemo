@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_blankj_main"
+    tools:context="com.lib.utils.blankj.activity.BlankjStatusBarActivity">
+
+    <include layout="@layout/layout_top_bar" />
+
+    <TextView
+        android:id="@+id/tv_blankj_status_bar_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="@dimen/linear_menu_height"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="12dp"
+        android:text="TextView" />
+
+    <Button
+        android:id="@+id/btn_blankj_status_bar_change_bg_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="改变背景色" />
+    <Button
+        android:id="@+id/btn_blankj_status_bar_change_text_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="改变字体色" />
+    <Button
+        android:id="@+id/btn_blankj_status_bar_change_visible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="隐藏/显示" />
+    <Button
+        android:id="@+id/btn_blankj_status_bar_light_mode"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="LightMode" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/linear_menu_height"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/edt_blankj_status_bar_alpha"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:inputType="number"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/btn_blankj_status_bar_alpha"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="透明度 0-255" />
+    </LinearLayout>
+
+</LinearLayout>

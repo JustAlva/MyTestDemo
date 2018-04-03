@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="navigation_color">
+        <item>@color/blue_an</item>
+        <item>@color/red_purple</item>
+        <item>@color/violet_an</item>
+        <item>@color/blue_green</item>
+    </string-array>
+</resources>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--底部菜单栏-->
+    <declare-styleable name="NavigationTabBar">
+        <attr name="ntb_titled" format="boolean"/>
+        <attr name="ntb_badged" format="boolean"/>
+        <attr name="ntb_scaled" format="boolean"/>
+        <attr name="ntb_tinted" format="boolean"/>
+        <attr name="ntb_swiped" format="boolean"/>
+        <attr name="ntb_badge_use_typeface" format="boolean"/>
+
+        <attr name="ntb_title_size" format="dimension"/>
+        <attr name="ntb_title_mode" format="enum">
+            <enum name="all" value="0"/>
+            <enum name="active" value="1"/>
+        </attr>
+
+        <attr name="ntb_badge_size" format="dimension"/>
+        <attr name="ntb_badge_position" format="enum">
+            <enum name="left" value="0"/>
+            <enum name="center" value="1"/>
+            <enum name="right" value="2"/>
+        </attr>
+        <attr name="ntb_badge_gravity" format="enum">
+            <enum name="top" value="0"/>
+            <enum name="bottom" value="1"/>
+        </attr>
+        <attr name="ntb_badge_bg_color" format="color"/>
+        <attr name="ntb_badge_title_color" format="color"/>
+
+        <attr name="ntb_typeface" format="string"/>
+        <attr name="ntb_corners_radius" format="dimension"/>
+        <attr name="ntb_icon_size_fraction" format="float"/>
+        <attr name="ntb_animation_duration" format="integer"/>
+
+        <attr name="ntb_inactive_color" format="color"/>
+        <attr name="ntb_active_color" format="color"/>
+        <attr name="ntb_bg_color" format="color"/>
+
+        <attr name="ntb_preview_colors" format="reference"/>
+    </declare-styleable>
+    <!--底部菜单栏-->
+
+    <!--material dialog-->
+    <!-- These top three attributes are not accessible to library users -->
+    <attr name="md_divider" format="color" />
+
+    <!-- Accessible global theming attributes -->
+    <attr name="md_dark_theme" format="boolean" />
+    <attr name="md_background_color" format="color" />
+
+    <attr name="md_icon" format="reference" />
+    <attr name="md_icon_max_size" format="dimension" />
+    <attr name="md_icon_limit_icon_to_default_size" format="boolean" />
+
+    <attr name="md_title_color" format="color" />
+    <attr name="md_content_color" format="color" />
+    <attr name="md_link_color" format="color" />
+
+    <attr name="md_positive_color" format="color" />
+    <attr name="md_neutral_color" format="color" />
+    <attr name="md_negative_color" format="color" />
+    <attr name="md_widget_color" format="color" />
+
+    <attr name="md_item_color" format="color" />
+    <attr name="md_divider_color" format="color" />
+    <attr name="md_list_selector" format="reference" />
+
+    <attr name="md_btn_stacked_selector" format="reference" />
+    <attr name="md_btn_positive_selector" format="reference" />
+    <attr name="md_btn_neutral_selector" format="reference" />
+    <attr name="md_btn_negative_selector" format="reference" />
+
+    <attr name="md_btn_ripple_color" format="color" />
+
+    <attr name="md_title_gravity" format="enum">
+        <enum name="start" value="0" />
+        <enum name="center" value="1" />
+        <enum name="end" value="2" />
+    </attr>
+
+    <attr name="md_content_gravity" format="enum">
+        <enum name="start" value="0" />
+        <enum name="center" value="1" />
+        <enum name="end" value="2" />
+    </attr>
+
+    <attr name="md_btnstacked_gravity" format="enum">
+        <enum name="start" value="0" />
+        <enum name="center" value="1" />
+        <enum name="end" value="2" />
+    </attr>
+
+    <attr name="md_items_gravity" format="enum">
+        <enum name="start" value="0" />
+        <enum name="center" value="1" />
+        <enum name="end" value="2" />
+    </attr>
+
+    <attr name="md_buttons_gravity" format="enum">
+        <enum name="start" value="0" />
+        <enum name="center" value="1" />
+        <enum name="end" value="2" />
+    </attr>
+
+    <declare-styleable name="MDRootLayout">
+        <attr name="md_reduce_padding_no_title_no_buttons" format="boolean" />
+    </declare-styleable>
+
+    <attr name="md_medium_font" format="string" />
+    <attr name="md_regular_font" format="string" />
+    <!--material dialog-->
+</resources>
