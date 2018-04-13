@@ -57,6 +57,14 @@
                 app:iconLeft="@drawable/icon_location"
                 app:iconRight="@drawable/arow_right"
                 app:textContent="定位" />
+            <!--定位2-->
+            <com.lib.utils.views.MenuLinearLayout
+                android:id="@+id/ml_find_location2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconLeft="@drawable/icon_location"
+                app:iconRight="@drawable/arow_right"
+                app:textContent="定位指向" />
             <!--图片选择-->
             <com.lib.utils.views.MenuLinearLayout
                 android:id="@+id/ml_find_select_picture"

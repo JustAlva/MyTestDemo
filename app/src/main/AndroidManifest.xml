@@ -117,7 +117,8 @@
         <activity android:name=".blankj.activity.BlankjPermissionActivity" />
         <activity android:name=".statusbar.activity.DrawableLayoutBarActivity" />
         <activity android:name=".test.activity.TestActivity" />
-        <activity android:name=".xinge.activity.MyNewsActivity"></activity>
+        <activity android:name=".xinge.activity.MyNewsActivity" />
+        <activity android:name=".location.activity.SenseLocationActivity"></activity>
     </application>
 
 </manifest>

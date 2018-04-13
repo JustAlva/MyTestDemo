@@ -50,6 +50,8 @@ public class FindFragment extends BaseFragment implements OnCheckDoubleClick{
     MenuLinearLayout mlSelectPicture;
     @BindView(R.id.ml_find_file_download)
     MenuLinearLayout mlFileDownload;
+    @BindView(R.id.ml_find_location2)
+    MenuLinearLayout mlLocation2;
 
     @Override
     protected View setContentView(LayoutInflater inflater) {
@@ -79,6 +81,8 @@ public class FindFragment extends BaseFragment implements OnCheckDoubleClick{
         mlDatePicker.setOnClickListener(doubleClickListener);
         //定位
         mlLocation.setOnClickListener(doubleClickListener);
+        //定位指向
+        mlLocation2.setOnClickListener(doubleClickListener);
         //图片选择
         mlSelectPicture.setOnClickListener(doubleClickListener);
         //文件下载
@@ -113,6 +117,10 @@ public class FindFragment extends BaseFragment implements OnCheckDoubleClick{
             case R.id.ml_find_location:
                 //定位
                 startActivity(GetLocationActivity.class);
+                break;
+            case R.id.ml_find_location2:
+                //定位指向
+
                 break;
             case R.id.ml_find_select_picture:
                 //图片选择

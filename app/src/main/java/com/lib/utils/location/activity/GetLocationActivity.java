@@ -1,6 +1,5 @@
 package com.lib.utils.location.activity;
 
-import android.Manifest;
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.content.pm.PackageManager;
@@ -10,13 +9,10 @@ import android.os.Handler;
 import android.os.Message;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
-import android.support.v4.app.ActivityCompat;
-import android.support.v4.content.ContextCompat;
 import android.support.v7.widget.CardView;
 import android.util.Log;
 import android.view.View;
 import android.view.ViewStub;
-import android.view.animation.AlphaAnimation;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
@@ -29,14 +25,9 @@ import com.amap.api.maps.CameraUpdate;
 import com.amap.api.maps.CameraUpdateFactory;
 import com.amap.api.maps.LocationSource;
 import com.amap.api.maps.MapView;
-import com.amap.api.maps.model.BitmapDescriptor;
 import com.amap.api.maps.model.BitmapDescriptorFactory;
-import com.amap.api.maps.model.LatLng;
-import com.amap.api.maps.model.MarkerOptions;
 import com.amap.api.maps.model.MyLocationStyle;
-import com.amap.api.maps.model.animation.Animation;
 import com.blankj.utilcode.constant.PermissionConstants;
-import com.blankj.utilcode.util.LogUtils;
 import com.blankj.utilcode.util.ScreenUtils;
 import com.lib.ui.layout.dialog.material.DialogAction;
 import com.lib.ui.layout.dialog.material.MaterialDialog;
@@ -44,7 +35,6 @@ import com.lib.utils.R;
 import com.lib.utils.base.BaseActivity;
 import com.lib.utils.location.bean.AMapMarkBean;
 import com.lib.utils.location.utils.GDLocationUtils;
-import com.lib.utils.totalutil.PermissionUtils;
 import com.lib.utils.totalutil.clickutils.CheckDoubleClickListener;
 import com.lib.utils.totalutil.clickutils.OnCheckDoubleClick;
 
@@ -55,7 +45,6 @@ import java.util.List;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 /**
  * describe: 定位
