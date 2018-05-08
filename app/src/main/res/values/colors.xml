@@ -5,7 +5,10 @@
     <color name="colorAccent">#FF4081</color>
 
     <color name="content_background">#f2f2f2</color>
-
+    <!--loading dialog-->
+    <color name="kprogresshud_default_color">#b1000000</color>
+    <color name="kprogresshud_grey_color">#449E9E9E</color>
+    <color name="half_trans">#e0000000</color>
     <!-- 主题色 -->
     <color name="main_color">#1B3645</color>
     <color name="line_color" >#696969</color>

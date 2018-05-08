@@ -118,7 +118,9 @@
         <activity android:name=".statusbar.activity.DrawableLayoutBarActivity" />
         <activity android:name=".test.activity.TestActivity" />
         <activity android:name=".xinge.activity.MyNewsActivity" />
-        <activity android:name=".location.activity.SenseLocationActivity"></activity>
+        <activity android:name=".location.activity.SenseLocationActivity" />
+        <activity android:name=".trimmemory.activity.TrimMemoryActivity" />
+        <activity android:name=".dimenfit.activity.ScreenDimenFitActivity"></activity>
     </application>
 
 </manifest>

@@ -35,6 +35,8 @@ public class MaterialDialogActivity extends BaseActivity implements OnCheckDoubl
     CardView cvProcessDialog;
     @BindView(R.id.cv_news_avi_dialog)
     CardView cvAviDialog;
+    @BindView(R.id.cv_news_customer_dialog)
+    CardView cvCustomerDialog;
 
     @Override
     protected void setContentView(@Nullable Bundle savedInstanceState) {
@@ -57,6 +59,7 @@ public class MaterialDialogActivity extends BaseActivity implements OnCheckDoubl
         cvLoadingDialog.setOnClickListener(doubleClickListener);
         cvProcessDialog.setOnClickListener(doubleClickListener);
         cvAviDialog.setOnClickListener(doubleClickListener);
+        cvCustomerDialog.setOnClickListener(doubleClickListener);
     }
 
     Thread thread;
@@ -164,6 +167,17 @@ public class MaterialDialogActivity extends BaseActivity implements OnCheckDoubl
                 LoadingDialog loadingDialog = new LoadingDialog();
                 loadingDialog.createLoadingDialog(
                         this, "加载数据...", true);
+                break;
+
+            case R.id.cv_news_customer_dialog:
+                //自定义dialog
+                boolean wrapInScrollView = true;
+                new MaterialDialog.Builder(this)
+                        .title("加载")
+                        .customView(R.layout.dialog_material_customer_loading, wrapInScrollView)
+                        .progress(true,0)
+                        .positiveText("确定")
+                        .show();
                 break;
         }
     }

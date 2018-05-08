@@ -67,6 +67,11 @@ public class CalendarActivity extends BaseActivity implements
     }
 
     @Override
+    public void onTrimMemory(int level) {
+        super.onTrimMemory(level);
+    }
+
+    @Override
     protected void initData() {
         final List<Calendar> schemes = new ArrayList<>();
         final int year = mCalendarView.getCurYear();

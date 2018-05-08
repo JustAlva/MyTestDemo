@@ -3,6 +3,7 @@ apply from: '../dependencies.gradle'
 
 android {
     compileSdkVersion versions.compileSdk
+    buildToolsVersion versions.buildTools
     defaultConfig {
         applicationId versions.applicationId
         minSdkVersion versions.minSdk
@@ -11,7 +12,6 @@ android {
         versionName versions.versionName
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         multiDexEnabled true
-
         ndk {
             //根据需要 自行选择添加的对应cpu类型的.so库。
             abiFilters 'x86', 'armeabi', 'armeabi-v7a', 'arm64-v8a'

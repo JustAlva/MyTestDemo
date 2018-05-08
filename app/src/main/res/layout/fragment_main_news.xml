@@ -51,6 +51,20 @@
                 app:iconLeft="@drawable/icon_dialog"
                 app:iconRight="@drawable/arow_right"
                 app:textContent="Test" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:gravity="center"
+                android:text="优化" />
+            <com.lib.utils.views.MenuLinearLayout
+                android:id="@+id/ml_news_trim_memory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconLeft="@drawable/icon_dialog"
+                app:iconRight="@drawable/arow_right"
+                app:textContent="onTrimMemory" />
         </LinearLayout>
     </com.lib.utils.views.MyReboundScrollView>
 </LinearLayout>

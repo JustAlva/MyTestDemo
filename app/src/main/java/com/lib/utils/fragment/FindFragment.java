@@ -15,6 +15,7 @@ import com.lib.utils.coordinatorlayout.activity.CoordinatorLayoutActivity;
 import com.lib.utils.datepicker.activity.DatePickerActivity;
 import com.lib.utils.filedownload.activity.FileDownloadActivity;
 import com.lib.utils.location.activity.GetLocationActivity;
+import com.lib.utils.location.activity.SenseLocationActivity;
 import com.lib.utils.qrcode.activity.QrCodeActivity;
 import com.lib.utils.totalutil.clickutils.CheckDoubleClickListener;
 import com.lib.utils.totalutil.clickutils.OnCheckDoubleClick;
@@ -120,7 +121,7 @@ public class FindFragment extends BaseFragment implements OnCheckDoubleClick{
                 break;
             case R.id.ml_find_location2:
                 //定位指向
-
+                startActivity(SenseLocationActivity.class);
                 break;
             case R.id.ml_find_select_picture:
                 //图片选择

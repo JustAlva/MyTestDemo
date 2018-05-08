@@ -13,6 +13,7 @@ import com.lib.utils.statusbar.activity.DrawableLayoutBarActivity;
 import com.lib.utils.test.activity.TestActivity;
 import com.lib.utils.totalutil.clickutils.CheckDoubleClickListener;
 import com.lib.utils.totalutil.clickutils.OnCheckDoubleClick;
+import com.lib.utils.trimmemory.activity.TrimMemoryActivity;
 import com.lib.utils.views.MenuLinearLayout;
 
 import butterknife.BindView;
@@ -35,6 +36,8 @@ public class NewsFragment extends BaseFragment implements OnCheckDoubleClick {
     MenuLinearLayout mlDrawableLayout;
     @BindView(R.id.ml_news_material_test)
     MenuLinearLayout mlTest;
+    @BindView(R.id.ml_news_trim_memory)
+    MenuLinearLayout mlTrimMemory;
 
     @Override
     protected View setContentView(LayoutInflater inflater  ) {
@@ -58,6 +61,7 @@ public class NewsFragment extends BaseFragment implements OnCheckDoubleClick {
         mlMaterialDialog.setOnClickListener(doubleClickListener);
         mlDrawableLayout.setOnClickListener(doubleClickListener);
         mlTest.setOnClickListener(doubleClickListener);
+        mlTrimMemory.setOnClickListener(doubleClickListener);
     }
 
 
@@ -81,6 +85,10 @@ public class NewsFragment extends BaseFragment implements OnCheckDoubleClick {
             case R.id.ml_news_material_test:
                 //
                 startActivity(TestActivity.class);
+                break;
+            case R.id.ml_news_trim_memory:
+                //释放内存
+                startActivity(TrimMemoryActivity.class);
                 break;
         }
     }
