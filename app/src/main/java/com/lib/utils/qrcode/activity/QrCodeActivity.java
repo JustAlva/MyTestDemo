@@ -41,7 +41,7 @@ public class QrCodeActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 IntentIntegrator integrator =  new IntentIntegrator(QrCodeActivity.this) ;
-                 integrator.setOrientationLocked(false)//设置扫码的方向
+                integrator.setOrientationLocked(false)//设置扫码的方向
                         .setPrompt("将条码放置于框内")//设置下方提示文字
                         .setCameraId(0)//前置或后置摄像头
                         .setBeepEnabled(true)//扫码提示音，默认开启

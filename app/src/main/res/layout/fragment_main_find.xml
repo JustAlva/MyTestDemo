@@ -81,6 +81,22 @@
                 app:iconLeft="@drawable/icon_pic"
                 app:iconRight="@drawable/arow_right"
                 app:textContent="文件下载" />
+            <!--文件预览-->
+            <com.lib.utils.views.MenuLinearLayout
+                android:id="@+id/ml_find_file_preview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconLeft="@drawable/icon_pic"
+                app:iconRight="@drawable/arow_right"
+                app:textContent="文件预览" />
+            <!--考试题-->
+            <com.lib.utils.views.MenuLinearLayout
+                android:id="@+id/ml_find_file_answer_test"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconLeft="@drawable/icon_pic"
+                app:iconRight="@drawable/arow_right"
+                app:textContent="选择题" />
         </LinearLayout>
     </com.lib.utils.views.MyReboundScrollView>
 </LinearLayout>

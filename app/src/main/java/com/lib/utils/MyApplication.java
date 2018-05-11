@@ -12,6 +12,9 @@ import com.orhanobut.logger.Logger;
 import com.tencent.android.tpush.XGIOperateCallback;
 import com.tencent.android.tpush.XGPushConfig;
 import com.tencent.android.tpush.XGPushManager;
+import com.tencent.smtt.sdk.QbSdk;
+
+import static com.amap.api.mapcore.util.dj.b;
 
 public class MyApplication extends Application {
     private boolean boolShowLogger = false;
@@ -21,10 +24,31 @@ public class MyApplication extends Application {
     public void onCreate() {
         super.onCreate();
 
+        initTBS();
         initLogger();
         initBlankjUtils();
     }
 
+    /**
+     * 腾讯x5内核
+     */
+    private void initTBS() {
+
+        QbSdk.PreInitCallback cb = new QbSdk.PreInitCallback() {
+            @Override
+            public void onViewInitFinished(boolean arg0) {
+                //x5內核初始化完成的回调，为true表示x5内核加载成功，否则表示x5内核加载失败，会自动切换到系统内核。
+                Log.i("zkd", " onViewInitFinished is " + arg0);
+            }
+
+            @Override
+            public void onCoreInitFinished() {
+                Log.i("zkd","加载内核是否成功:"+b);
+            }
+        };
+        //x5内核初始化接口
+        QbSdk.initX5Environment(getApplicationContext(),  cb);
+    }
     /**
      * 初识化 BlankjUtils
      */

@@ -22,6 +22,8 @@
     <!-- 允许程序访问CellID或WiFi热点来获取粗略的位置 -->
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
     <uses-permission android:name="android.permission.GET_TASKS" />
+    <!-- DownloadManager下载时不显示Notification -->
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
 
     <application
         android:name=".MyApplication"
@@ -120,7 +122,9 @@
         <activity android:name=".xinge.activity.MyNewsActivity" />
         <activity android:name=".location.activity.SenseLocationActivity" />
         <activity android:name=".trimmemory.activity.TrimMemoryActivity" />
-        <activity android:name=".dimenfit.activity.ScreenDimenFitActivity"></activity>
+        <activity android:name=".dimenfit.activity.ScreenDimenFitActivity" />
+        <activity android:name=".filepreview.activity.FilePreviewActivity" />
+        <activity android:name=".answer.activity.AnswerMainActivity"></activity>
     </application>
 
 </manifest>

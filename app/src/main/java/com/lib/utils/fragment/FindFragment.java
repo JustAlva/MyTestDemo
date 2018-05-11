@@ -9,11 +9,13 @@ import android.widget.TextView;
 
 import com.lib.utils.R;
 import com.lib.utils.SelectPicture.activity.SelectPictureActivity;
+import com.lib.utils.answer.activity.AnswerMainActivity;
 import com.lib.utils.base.BaseFragment;
 import com.lib.utils.calendar.activity.CalendarActivity;
 import com.lib.utils.coordinatorlayout.activity.CoordinatorLayoutActivity;
 import com.lib.utils.datepicker.activity.DatePickerActivity;
 import com.lib.utils.filedownload.activity.FileDownloadActivity;
+import com.lib.utils.filepreview.activity.FilePreviewActivity;
 import com.lib.utils.location.activity.GetLocationActivity;
 import com.lib.utils.location.activity.SenseLocationActivity;
 import com.lib.utils.qrcode.activity.QrCodeActivity;
@@ -53,6 +55,10 @@ public class FindFragment extends BaseFragment implements OnCheckDoubleClick{
     MenuLinearLayout mlFileDownload;
     @BindView(R.id.ml_find_location2)
     MenuLinearLayout mlLocation2;
+    @BindView(R.id.ml_find_file_preview)
+    MenuLinearLayout mlFilePreview;
+    @BindView(R.id.ml_find_file_answer_test)
+    MenuLinearLayout mlAnswer;
 
     @Override
     protected View setContentView(LayoutInflater inflater) {
@@ -88,6 +94,10 @@ public class FindFragment extends BaseFragment implements OnCheckDoubleClick{
         mlSelectPicture.setOnClickListener(doubleClickListener);
         //文件下载
         mlFileDownload.setOnClickListener(doubleClickListener);
+        //文件预览
+        mlFilePreview.setOnClickListener(doubleClickListener);
+        //选择题
+        mlAnswer.setOnClickListener(doubleClickListener);
     }
 
     @Override
@@ -130,6 +140,14 @@ public class FindFragment extends BaseFragment implements OnCheckDoubleClick{
             case R.id.ml_find_file_download:
                 //文件下载
                 startActivity(FileDownloadActivity.class);
+                break;
+            case R.id.ml_find_file_preview:
+                //文件预览
+                startActivity(FilePreviewActivity.class);
+                break;
+            case R.id.ml_find_file_answer_test:
+                //选择题
+                startActivity(AnswerMainActivity.class);
                 break;
         }
     }
