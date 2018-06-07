@@ -36,7 +36,8 @@ import android.support.annotation.NonNull;
 import android.support.v4.content.ContextCompat;
 import android.view.View;
 
-import com.blankj.utilcode.constant.MemoryConstants;
+
+import com.tek.libs.utils.utilcode.constant.MemoryConstants;
 
 import java.io.BufferedOutputStream;
 import java.io.ByteArrayOutputStream;

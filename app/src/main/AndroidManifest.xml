@@ -124,7 +124,10 @@
         <activity android:name=".trimmemory.activity.TrimMemoryActivity" />
         <activity android:name=".dimenfit.activity.ScreenDimenFitActivity" />
         <activity android:name=".filepreview.activity.FilePreviewActivity" />
-        <activity android:name=".answer.activity.AnswerMainActivity"></activity>
+        <activity android:name=".answer.activity.AnswerMainActivity" />
+        <activity android:name=".viewpagertest.activity.MultiplexViewPagerActivity" />
+        <activity android:name=".viewpagertest.activity.ViewPagerDataControlViewActivity" />
+        <activity android:name=".tablayout.activity.TablayoutWithRecyclerActivity"></activity>
     </application>
 
 </manifest>

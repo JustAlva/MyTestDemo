@@ -19,6 +19,7 @@
     <dimen name="font_hint">14sp</dimen>
 
     <dimen name="margin_edge">15dp</dimen>
+    <dimen name="margin_edge_8">8dp</dimen>
 
 
 

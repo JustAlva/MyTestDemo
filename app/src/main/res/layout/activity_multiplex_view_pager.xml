@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.tek.storesystem.activity.home.ExamineActivity">
+    tools:context="com.lib.utils.viewpagertest.activity.MultiplexViewPagerActivity">
 
     <include
         android:id="@+id/include_top"
@@ -17,39 +17,25 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tl_fragment_multiplex_tab_layout_head"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/main_top_bar_height"
+        app:tabMode="scrollable"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include_top"
+        app:layout_constraintVertical_bias="0.0"
+        app:tabIndicatorColor="@color/blue_an"
+        app:tabSelectedTextColor="@color/blue_an" />
 
-    <FrameLayout
-        android:id="@+id/fl_examine"
+    <android.support.v4.view.ViewPager
+        android:id="@+id/vp_multiplex_view_pager"
         android:layout_width="0dp"
         android:layout_height="0dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/include_top">
-        <android.support.v4.view.ViewPager
-            android:id="@+id/vp_examine"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"  />
-
-        <TextView
-            android:id="@+id/tv_examine_time"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text=""
-            android:textSize="18sp"
-            android:layout_marginBottom="20dp"
-            android:layout_marginRight="20dp"
-            android:layout_gravity="bottom|right"/>
-    </FrameLayout>
-
-
-    <include
-        layout="@layout/view_no_data"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/include_top"
-        android:visibility="gone"/>
+        app:layout_constraintTop_toBottomOf="@+id/tl_fragment_multiplex_tab_layout_head" />
 </android.support.constraint.ConstraintLayout>

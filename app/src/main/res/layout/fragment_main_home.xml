@@ -48,12 +48,27 @@
                 app:iconRight="@drawable/arow_right"
                 app:textContent="TabLayout" />
             <com.lib.utils.views.MenuLinearLayout
+                android:id="@+id/ml_home_tablayout_with_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconLeft="@drawable/icon_view"
+                app:iconRight="@drawable/arow_right"
+                app:textContent="TabLayout和RecyclerView" />
+            <com.lib.utils.views.MenuLinearLayout
                 android:id="@+id/ml_home_tablayout_news"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 app:iconLeft="@drawable/icon_view"
                 app:iconRight="@drawable/arow_right"
                 app:textContent="我的消息" />
+            <com.lib.utils.views.MenuLinearLayout
+                android:id="@+id/ml_home_tablayout_multiplex_viewpager"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:iconLeft="@drawable/icon_view"
+                app:iconRight="@drawable/arow_right"
+                app:textContent="ViewPager View 复用" />
+
         </LinearLayout>
     </com.lib.utils.views.MyReboundScrollView>
 </LinearLayout>

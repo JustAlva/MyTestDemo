@@ -12,8 +12,10 @@ import com.lib.utils.base.BaseFragment;
 import com.lib.utils.floatingactionbutton.activity.FloatingActionButtonActivity;
 import com.lib.utils.tablayout.activity.TabLayoutHeadActivity;
 import com.lib.utils.tablayout.activity.TabLayoutMyItemActivity;
+import com.lib.utils.tablayout.activity.TablayoutWithRecyclerActivity;
 import com.lib.utils.totalutil.clickutils.CheckDoubleClickListener;
 import com.lib.utils.totalutil.clickutils.OnCheckDoubleClick;
+import com.lib.utils.viewpagertest.activity.MultiplexViewPagerActivity;
 import com.lib.utils.views.MenuLinearLayout;
 import com.lib.utils.xinge.activity.MyNewsActivity;
 import com.lib.utils.xinge.beans.MessageBean;
@@ -44,6 +46,10 @@ public class HomeFragment extends BaseFragment implements OnCheckDoubleClick {
     MenuLinearLayout mlTabLayoutHead;
     @BindView(R.id.ml_home_tablayout_news)
     MenuLinearLayout mlNews;
+    @BindView(R.id.ml_home_tablayout_multiplex_viewpager)
+    MenuLinearLayout mlViewPager;
+    @BindView(R.id.ml_home_tablayout_with_recyclerview)
+    MenuLinearLayout mlTabWithRecyclerView;
 
     private MessageBean messageBean ;
 
@@ -87,7 +93,10 @@ public class HomeFragment extends BaseFragment implements OnCheckDoubleClick {
         mlTabLayoutHead.setOnClickListener(doubleClickListener);
         //我的消息
         mlNews.setOnClickListener(doubleClickListener);
-
+        //multiplex viewpager
+        mlViewPager.setOnClickListener(doubleClickListener);
+        //tablayout with recyclerview
+        mlTabWithRecyclerView.setOnClickListener(doubleClickListener);
     }
 
     @Override
@@ -133,6 +142,13 @@ public class HomeFragment extends BaseFragment implements OnCheckDoubleClick {
                 mContext.startActivity(intent);
                 mlNews.dismissPoint();
                 break;
+            case R.id.ml_home_tablayout_multiplex_viewpager:
+                startActivity(MultiplexViewPagerActivity.class);
+                break;
+            case R.id.ml_home_tablayout_with_recyclerview:
+                startActivity(TablayoutWithRecyclerActivity.class);
+                break;
+
         }
     }
 }

@@ -8,7 +8,6 @@ import android.support.v7.widget.CardView;
 import android.view.View;
 import android.view.ViewStub;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.blankj.utilcode.constant.PermissionConstants;
 import com.blankj.utilcode.util.LogUtils;
@@ -17,7 +16,6 @@ import com.blankj.utilcode.util.ScreenUtils;
 import com.blankj.utilcode.util.SpanUtils;
 import com.lib.utils.R;
 import com.lib.utils.base.BaseActivity;
-import com.lib.utils.blankj.utils.DialogHelper;
 import com.lib.utils.totalutil.clickutils.CheckDoubleClickListener;
 import com.lib.utils.totalutil.clickutils.OnCheckDoubleClick;
 
